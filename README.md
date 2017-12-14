@@ -2,12 +2,12 @@
 
 `pulse-volume-monitor` is a simple C++ program that listens to PulseAudio's sink and source events and emits DBus signals `sinkChanged` and `sourceChanged` when something has been changed (volume, sink or source muted, etc).
 
-For use with AwesomeWM in volume indicator widget.
+For use with AwesomeWM in volume indicator widgets.
 
 ### Usage
 `./pulse-volume-monitor dbus` or `./pulse-volume-monitor stdout` (for debugging)
 
-### AwesomeWM LUA example
+### AwesomeWM Lua example
 
 ```
 dbus.request_name("session", "com.ch1p.pvm")
